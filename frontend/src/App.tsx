@@ -175,7 +175,7 @@ export default function App(): React.ReactElement {
             <div ref={linkBox} className="lg:flex items-center justify-center lg:w-auto flex w-[85%] lg:h-auto h-[50%] hidden">
               <h1 className="hidden lg:flex text-[30px] font-bold mr-60 text-[#9f5062]">Dimas Alexander</h1>
               <Link
-                to="/myPortofolio/"
+                to="/"
                 id="home"
                 className="currentPage link"
                 draggable={false}
@@ -184,7 +184,7 @@ export default function App(): React.ReactElement {
               </Link>
 
               <Link
-                to="/myPortofolio/about"
+                to="/about"
                 id="about"
                 className="link"
                 draggable={false}
@@ -193,7 +193,7 @@ export default function App(): React.ReactElement {
               </Link>
 
               <Link
-                to="/myPortofolio/portofolio"
+                to="/portofolio"
                 id="portofolio"
                 className="link"
                 draggable={false}
@@ -214,9 +214,9 @@ export default function App(): React.ReactElement {
           </nav>
 
           <Routes>
-            <Route path="/myPortofolio/" element={<Home />} />
-            <Route path="/myPortofolio/about" element={<About />} />
-            <Route path="/myPortofolio/portofolio" element={<Portofolio />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portofolio" element={<Portofolio />} />
           </Routes>
         </main>
       </div>
