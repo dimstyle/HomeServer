@@ -22,6 +22,11 @@
 
   --animate-roundedIconfor: roundedIcon 0.5s linear forwards;
   --animate-roundedIconrev: roundedIcon 0.5s linear reverse;
+
+  --animate-burgerOpen: burgerOpen 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-burgerMiddleOpen: burgerMiddleOpen 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-burgerClose: burgerClose 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-burgerMiddleClose: burgerMiddleClose 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 /* animation */
@@ -195,6 +200,46 @@
   }
   100%{
     border-radius: 100%
+  }
+}
+
+@keyframes burgerOpen {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes burgerMiddleOpen {
+  0% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+
+@keyframes burgerClose {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes burgerMiddleClose {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
   }
 }
 
