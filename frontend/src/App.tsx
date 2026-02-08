@@ -172,7 +172,7 @@ export default function App(): React.ReactElement {
       <div className="flex justify-center lg:bg-[var(--background-color)] bg-[var(--main-color)] text-[var(--lavender-blush)] font-roboto z-[0] min-h-screen min-w-screen">
         <main className="flex flex-col items-center lg:my-6 lg:rounded-[5px] bg-[var(--main-color)] min-w-[95%] min-h-[92%]">
           <nav className="rounded-[5px] flex lg:justify-center justify-end h-[10%] lg:mt-5 w-[97%] items-center">
-            <div ref={linkBox} className="lg:flex items-center justify-center lg:w-auto flex w-[85%] lg:h-auto h-[50%] hidden">
+            <div ref={linkBox} className="lg:flex items-center justify-center lg:w-auto flex w-[85%] lg:h-auto h-[50%]">
               <h1 className="hidden lg:flex text-[30px] font-bold mr-60 text-[#9f5062]">Dimas Alexander</h1>
               <Link
                 to="/"
